@@ -71,5 +71,32 @@ the first column contains the samples of parameter $k$, columns from $2$ to $n+1
 (we are not interested in column $2$), columns from $n+2$ to $2n+1$ contain the samples of the $I_j^2$ terms, in particular column $n+2$ contains the samples of
 parameter $I_0^2$ (we are not interested in column $2n+1$)
 
-#### Input arguments imposed to reproduce the results obtained for each dataset 
+#### Reproducibility of the results
+
+We outline, for each available dataset, the input arguments passed to the function `sorgente`, in order to obtain the results shown in the paper and in the
+supplementary material.
+
+###### Real data from the Piemonte region (file _workspace_dati_piemonte.RData_)
+
+`stoc` = $0/1$, `kstart` = $3$, `epsstart` = $15$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,16,30,44,58)$, `incr_k` = $0.2$, `incr_eps` = $-3$, `num_it` = $6 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$, `Thin` = $10^4$, `Nn` = $c(rep(10,16),rep(20,3),rep(40,10),rep(70,5),rep(100,10),rep(150,14))$,
+`Nrho` = $c(rep(20,19),rep(50,10),rep(130,11),rep(150,18))$, `N_eps` = $5$, `kstart_MCMC` = $2$, `epsstart_MCMC` = $10$.
+
+###### Deterministic simulated dataset (file _dataset_det_sim.RData_)
+
+`stoc` = $0$, `kstart` = $2.5$, `epsstart` = $10$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $3$, `x_axis` = $c(2,8,16,24,30)$, `incr_k` = $0.2$, `incr_eps` = $-3$, `num_it` = -, `Burnin` = -, `Thin` = -, `Nn` = -, `Nrho` = -, `N_eps` = -, `kstart_MCMC` = -, `epsstart_MCMC` = -.
+
+###### First stochastic simulated dataset (file_dataset_tauleap_k5_eps2.RData_)
+
+`stoc` = $0/1$, `kstart` = $3$, `epsstart` = $10$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,9,16,23,29)$, `incr_k` = $-0.2$, `incr_eps` = $3$, `num_it` = $3 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$, `Thin` = $3 \cdot 10^3$, `Nn` = $c(rep(20,5),rep(30,4),rep(50,7),rep(100,3),rep(150,10))$,
+`Nrho` = $c(rep(20,5),rep(30,4),rep(50,7),rep(100,3),rep(150,10))$, `N_eps` = $20$, `kstart_MCMC` = $2$, `epsstart_MCMC` = $10$.
+
+###### Second stochastic simulated dataset (file _dataset_I032.RData_)
+
+`stoc` = $0/1$, `kstart` = $2.5$, `epsstart` = $40$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,13,24,35,46)$, `incr_k` = $-0.2$, `incr_eps` = $4$, `num_it` = $8 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$ (additional burn-in is needed a-posteriori), `Thin` = $1.5 \cdot 10^4$, 
+`Nn` = $c(rep(10,16),rep(20,3),rep(40,10),rep(70,5),rep(100,10),rep(150,2))$,
+`Nrho` = $c(rep(20,19),rep(50,10),rep(130,11),rep(150,6))$, `N_eps` = $10$, `kstart_MCMC` = $2$, `epsstart_MCMC` = $10$.
+
+
+
+
 
