@@ -7,11 +7,11 @@ _code.R_: the main file containing the R function `sorgente`, which performs bot
 
 _workspace_dati_piemonte.RData_: R workspace with the data from the _Piemonte_ region, whose results are described in the paper
 
-_dataset_det_sim.RData_: R workspace containing the deterministic simulated dataset, whose results are in the Supplementary Material
+_dataset_det_sim.RData_: R workspace containing the deterministic simulated dataset, whose results are in the supplementary material
 
-_dataset_tauleap_k5_eps2.RData_: R workspace containing the first stochastic simulated dataset, whose results are in the Supplementary Material
+_dataset_tauleap_k5_eps2.RData_: R workspace containing the first stochastic simulated dataset, whose results are in the supplementary material
 
-_dataset_I032.RData_: R workspace containing the second stochastic simulated dataset, whose results are in the Supplementary Material
+_dataset_I032.RData_: R workspace containing the second stochastic simulated dataset, whose results are in the supplementary material
 
 
 #### FUNCTION `sorgente`
@@ -29,19 +29,19 @@ of both profile likelihood and parametric bootstrap 95% C.I.
 
 `kstart` starting value of parameter $k$ in the maximisation of the likelihood (_det. method_)
  
-`epsstart` starting value of parameter $I_0^2$ (often referred to as _epsilon_) in the maximisation of the likelihood (_det. method_)
+`epsstart` starting value of parameter $i_0^2$ (often referred to as _epsilon_) in the maximisation of the likelihood (_det. method_)
 
 `stepk` starting gridwith to compute profile C.I. for parameter $k$ (_det. method_)
 
-`stepeps` starting gridwith to compute profile C.I. for parameter $I_0^2$ (_det. method_)
+`stepeps` starting gridwith to compute profile C.I. for parameter $i_0^2$ (_det. method_)
 
-`max_k` maximum value of $k$ in the computation of the profile likelihood C.I. for parameter $I_0^2$ (_det. method_)
+`max_k` maximum value of $k$ in the computation of the profile likelihood C.I. for parameter $i_0^2$ (_det. method_)
 
 `x_axis` vector containing the days in which sequencing has been performed (i.e. $n_j \neq 0$) for the considered dataset (_det. method_)
 
 `incr_k` used to define the starting point for parameter $k$ in the likelihood maximisation when applying parametric bootstrap (_det. method_)
 
-`incr_eps` used to define the starting point for parameter $I_0^2$ in the likelihood maximisation when applying parametric bootstrap (_det. method_)
+`incr_eps` used to define the starting point for parameter $i_0^2$ in the likelihood maximisation when applying parametric bootstrap (_det. method_)
 
 `num_it` total number of iterations of the MCMC (_stoc. method_)
 
@@ -53,7 +53,7 @@ of both profile likelihood and parametric bootstrap 95% C.I.
 
 `Nrho` vector of increments used in the uniform proposals (MH) of the $I_j^2$ terms (_stoc. method_)
 
-`N_eps` increment used in the uniform proposal (MH) of parameter $I_0^2$ (_stoc. method_)
+`N_eps` increment used in the uniform proposal (MH) of parameter $I_0^2$ (often referred to as _epsilon_) (_stoc. method_)
 
 `kstart_MCMC` starting value for parameter $k$ in the MCMC (_stoc. method_)
 
@@ -64,7 +64,7 @@ of both profile likelihood and parametric bootstrap 95% C.I.
 A matrix called _sol_, structured as follows
 
 If the **deterministic method** is applied: the first row of _sol_ contains the ML estimate, the 95% profile C.I. and the parametric bootstrap 95% C.I. 
-for parameter $k$; the second row contains the same for parameter $I_0^2$ (_sol_ is a matrix 2*5).
+for parameter $k$; the second row contains the same for parameter $i_0^2$ (_sol_ is a matrix 2*5).
 
 If the **stochastic method** is applied: _sol_ will have a number of rows equal to $N$ (number of iterations stored, i.e. burn-in and thin already applied);
 the first column contains the samples of parameter $k$, columns from $2$ to $n+1$ (with $n$=number of days) contain the samples of the $Y_j^2$ terms 
