@@ -92,9 +92,9 @@ supplementary material.
 
 ###### Second stochastic simulated dataset (file _dat_sim_2_p=esp.RData_)
 
-`stoc` = $0/1$, `kstart` = $2.5$, `epsstart` = $40$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,13,24,35,46)$, `incr_k` = $-0.2$, `incr_eps` = $4$, `num_it` = $8 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$ (additional burn-in is needed a-posteriori), `Thin` = $1.5 \cdot 10^4$, 
-`Nn` = $c(rep(10,16),rep(20,3),rep(40,10),rep(70,5),rep(100,10),rep(150,2))$,
-`Nrho` = $c(rep(20,19),rep(50,10),rep(130,11),rep(150,6))$, `N_eps` = $10$, `kstart_MCMC` = $2$, `epsstart_MCMC` = $10$.
+`stoc` = $0/1$, `kstart` = $3.5$, `epsstart` = $30$, `stepk` = $0.1$, `stepeps` = $1$, `max_k` = $10$, `x_axis` = $c(2,13,24,35,46)$, `incr_k` = $-0.2$, `incr_eps` = $4$, `num_it` = $10^8$, `Burnin` = $10^7$ (additional burn-in is needed a-posteriori), `Thin` = $2 \cdot 10^4$, 
+`Nn` = $c(rep(20,11),rep(50,10),rep(80,10),rep(150,5),rep(200,5),rep(150,5))$,
+`Nrho` = $c(rep(20,7),rep(35,5),rep(50,5),rep(80,5),rep(100,6),rep(150,8),rep(200,10))$, `N_eps` = $20$, `kstart_MCMC` = $4$, `epsstart_MCMC` = $10$.
 
 
 
