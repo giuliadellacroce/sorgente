@@ -78,7 +78,7 @@ supplementary material.
 
 ###### Real data from the Piemonte region (file _workspace_dati_piemonte.RData_)
 
-`stoc` = $0/1$, `kstart` = $3$, `epsstart` = $15$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,16,30,44,58)$, `incr_k` = $0.2$, `incr_eps` = $-3$, `num_it` = $6 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$, `Thin` = $10^4$, `Nn` = $c(rep(10,16),rep(20,3),rep(40,10),rep(70,5),rep(100,10),rep(150,14))$,
+`stoc` = $0/1$, `kstart` = $3$, `epsstart` = $15$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,16,30,44,58)$, `incr_k` = $0.2$, `incr_eps` = $-3$, `num_it` = $8 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$, `Thin` = $1.5 \cdot 10^4$, `Nn` = $c(rep(10,16),rep(20,3),rep(40,10),rep(70,5),rep(100,10),rep(150,14))$,
 `Nrho` = $c(rep(20,19),rep(50,10),rep(130,11),rep(150,18))$, `N_eps` = $5$, `kstart_MCMC` = $2$, `epsstart_MCMC` = $10$.
 
 ###### Deterministic simulated dataset (file _dataset_det_sim.RData_)
