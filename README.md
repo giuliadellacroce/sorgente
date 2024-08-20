@@ -87,8 +87,8 @@ supplementary material.
 
 ###### First stochastic simulated dataset (file _dat_sim_1_p=esp.RData_)
 
-`stoc` = $0/1$, `kstart` = $3$, `epsstart` = $10$, `stepk` = $0.1$, `stepeps` = $0.1$, `max_k` = $10$, `x_axis` = $c(2,9,16,23,29)$, `incr_k` = $-0.2$, `incr_eps` = $3$, `num_it` = $3 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$, `Thin` = $3 \cdot 10^3$, `Nn` = $c(rep(20,5),rep(30,4),rep(50,7),rep(100,3),rep(150,10))$,
-`Nrho` = $c(rep(20,5),rep(30,4),rep(50,7),rep(100,3),rep(150,10))$, `N_eps` = $20$, `kstart_MCMC` = $2$, `epsstart_MCMC` = $10$.
+`stoc` = $0/1$, `kstart` = $4$, `epsstart` = $3$, `stepk` = $0.1$, `stepeps` = $1$, `max_k` = $10$, `x_axis` = $c(2,9,16,23,29)$, `incr_k` = $-0.2$, `incr_eps` = $3$, `num_it` = $8 \cdot 10^7$, `Burnin` = $3 \cdot 10^6$, `Thin` = $2 \cdot 10^4$, `Nn` = $c(rep(20,5),rep(30,5),rep(80,6),rep(150,3),rep(200,10))$,
+`Nrho` = $c(rep(20,5),rep(30,5),rep(80,6),rep(150,3),rep(200,10))$, `N_eps` = $20$, `kstart_MCMC` = $4$, `epsstart_MCMC` = $10$.
 
 ###### Second stochastic simulated dataset (file _dat_sim_2_p=esp.RData_)
 
