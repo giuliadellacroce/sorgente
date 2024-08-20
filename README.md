@@ -9,9 +9,9 @@ _workspace_dati_piemonte.RData_: R workspace with the data from the _Piemonte_ r
 
 _dataset_det_sim.RData_: R workspace containing the deterministic simulated dataset, whose results are in the supplementary material
 
-_dataset_tauleap_k5_eps2.RData_: R workspace containing the first stochastic simulated dataset, whose results are in the supplementary material
+_dat_sim_1_p=esp.RData_: R workspace containing the first stochastic simulated dataset, whose results are in the supplementary material
 
-_dataset_I032.RData_: R workspace containing the second stochastic simulated dataset, whose results are in the supplementary material
+_dat_sim_2_p=esp.RData_: R workspace containing the second stochastic simulated dataset, whose results are in the supplementary material
 
 
 #### FUNCTION `sorgente`
